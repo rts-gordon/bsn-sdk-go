@@ -1,0 +1,13 @@
+# system ignore
+.DS_Store
+Thumbs.db
+*.exe
+*.exe~
+
+# Godep vender
+vendor
+
+debug
+*.log
+*.zip
+*.test
