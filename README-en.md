@@ -7,6 +7,7 @@ English | [简体中文](./README.md)
  based on the original source code [bsn-sdk-go](http://kb.bsnbase.com/webdoc/view/PubFile2c908ad371c6396b01725ea21e1b2832.html), only the go mod was used to process dependent components, and source code was not modified. It has been tested, and then uploaded to github for personal/team development.
 * Issues are welcome to be improved on this SDK.
 * If the official BSN later releases the github-based SDK, this SDK will be discontinued.
+* The copyright of this SDK code belongs to BSN.
 
 ## Usage
 * in your project folder:
@@ -21,5 +22,5 @@ English | [简体中文](./README.md)
     
     go 1.14
     
-    require github.com/chcp/bsn-sdk-go v1.0.0
+    require github.com/chcp/bsn-sdk-go v1.1.0
 ```
