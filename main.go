@@ -35,7 +35,7 @@ func main() {
 
 	nonce, _ := crypto.GetRandomNonce()
 	body := req.TransReqDataBody{
-		UserName:     "user001", //不需要设置username
+		UserName:     "",
 		Nonce:        base64.StdEncoding.EncodeToString(nonce),
 		ChainCode:    "cc_base",
 		FuncName:     "get",
