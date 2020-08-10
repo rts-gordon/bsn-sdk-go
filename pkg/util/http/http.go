@@ -18,7 +18,7 @@ func SendPost(dataBytes []byte, url string, cert string) ([]byte, error) {
 	isHttps := strings.Contains(url, "https://")
 
 	if isHttps {
-		logger.Debug("cert:", cert)
+		// logger.Debug("cert:", cert)
 		if cert == "" {
 			return nil, errors.New("HTTPS certificate not set")
 		}
