@@ -7,7 +7,6 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/chcp/bsn-sdk-go/pkg/common/errors"
 	"github.com/wonderivan/logger"
 )
 
@@ -18,10 +17,12 @@ func SendPost(dataBytes []byte, url string, cert string) ([]byte, error) {
 	isHttps := strings.Contains(url, "https://")
 
 	if isHttps {
+		/*2020-08-18 Gordon, disable log and check parameter cert
 		// logger.Debug("cert:", cert)
 		if cert == "" {
 			return nil, errors.New("HTTPS certificate not set")
 		}
+		*/
 
 		//dirPath, err := filepath.Abs(".")
 		//if err != nil {
