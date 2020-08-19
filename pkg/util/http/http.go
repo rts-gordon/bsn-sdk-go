@@ -5,7 +5,6 @@ import (
 	"crypto/tls"
 	"crypto/x509"
 	"net/http"
-	"strings"
 
 	"github.com/wonderivan/logger"
 )
@@ -14,7 +13,8 @@ func SendPost(dataBytes []byte, url string, cert string) ([]byte, error) {
 
 	var client *http.Client
 
-	isHttps := strings.Contains(url, "https://")
+	//isHttps := strings.Contains(url, "https://")
+	isHttps := false
 
 	if isHttps {
 		/*2020-08-18 Gordon, disable log and check parameter cert
