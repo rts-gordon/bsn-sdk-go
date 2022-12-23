@@ -18,9 +18,9 @@ import (
 	"time"
 
 	"github.com/golang/protobuf/proto"
-	bccsp "github.com/chcp/bsn-sdk-go/third_party/github.com/hyperledger/fabric/sdkpatch/cryptosuitebridge"
-	m "github.com/chcp/bsn-sdk-go/third_party/github.com/hyperledger/fabric/protos/msp"
 	errors "github.com/pkg/errors"
+	m "github.com/rts-gordon/bsn-sdk-go/third_party/github.com/hyperledger/fabric/protos/msp"
+	bccsp "github.com/rts-gordon/bsn-sdk-go/third_party/github.com/hyperledger/fabric/sdkpatch/cryptosuitebridge"
 )
 
 func (msp *bccspmsp) getCertifiersIdentifier(certRaw []byte) ([]byte, error) {

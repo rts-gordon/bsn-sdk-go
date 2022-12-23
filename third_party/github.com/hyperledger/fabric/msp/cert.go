@@ -31,8 +31,8 @@ import (
 	"math/big"
 	"time"
 
-	utils "github.com/chcp/bsn-sdk-go/third_party/github.com/hyperledger/fabric/sdkpatch/cryptosuitebridge"
 	"github.com/pkg/errors"
+	utils "github.com/rts-gordon/bsn-sdk-go/third_party/github.com/hyperledger/fabric/sdkpatch/cryptosuitebridge"
 )
 
 type validity struct {

@@ -22,8 +22,8 @@ package rwsetutil
 
 import (
 	"github.com/golang/protobuf/proto"
-	"github.com/chcp/bsn-sdk-go/third_party/github.com/hyperledger/fabric/protos/ledger/rwset"
-	"github.com/chcp/bsn-sdk-go/third_party/github.com/hyperledger/fabric/protos/ledger/rwset/kvrwset"
+	"github.com/rts-gordon/bsn-sdk-go/third_party/github.com/hyperledger/fabric/protos/ledger/rwset"
+	"github.com/rts-gordon/bsn-sdk-go/third_party/github.com/hyperledger/fabric/protos/ledger/rwset/kvrwset"
 )
 
 /////////////////////////////////////////////////////////////////

@@ -1,9 +1,9 @@
 package fabric
 
 import (
-	config2 "github.com/chcp/bsn-sdk-go/pkg/core/config"
-	req "github.com/chcp/bsn-sdk-go/pkg/core/entity/req/fabric/event"
 	"fmt"
+	config2 "github.com/rts-gordon/bsn-sdk-go/pkg/core/config"
+	req "github.com/rts-gordon/bsn-sdk-go/pkg/core/entity/req/fabric/event"
 	"testing"
 )
 

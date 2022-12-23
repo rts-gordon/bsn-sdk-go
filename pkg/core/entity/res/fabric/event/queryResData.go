@@ -1,6 +1,6 @@
 package event
 
-import "github.com/chcp/bsn-sdk-go/pkg/core/entity/base"
+import "github.com/rts-gordon/bsn-sdk-go/pkg/core/entity/base"
 
 type QueryResData struct {
 	base.BaseResModel

@@ -19,10 +19,10 @@ import (
 	"fmt"
 
 	"github.com/golang/protobuf/proto"
-	factory "github.com/chcp/bsn-sdk-go/third_party/github.com/hyperledger/fabric/sdkpatch/cryptosuitebridge"
 	"github.com/hyperledger/fabric-sdk-go/pkg/common/providers/core"
-	m "github.com/chcp/bsn-sdk-go/third_party/github.com/hyperledger/fabric/protos/msp"
 	"github.com/pkg/errors"
+	m "github.com/rts-gordon/bsn-sdk-go/third_party/github.com/hyperledger/fabric/protos/msp"
+	factory "github.com/rts-gordon/bsn-sdk-go/third_party/github.com/hyperledger/fabric/sdkpatch/cryptosuitebridge"
 )
 
 // mspSetupFuncType is the prototype of the setup function

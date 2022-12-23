@@ -17,13 +17,13 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/chcp/bsn-sdk-go/third_party/github.com/hyperledger/fabric-ca/api"
-	"github.com/chcp/bsn-sdk-go/third_party/github.com/hyperledger/fabric-ca/lib/client/credential"
-	"github.com/chcp/bsn-sdk-go/third_party/github.com/hyperledger/fabric-ca/lib/client/credential/x509"
-	"github.com/chcp/bsn-sdk-go/third_party/github.com/hyperledger/fabric-ca/lib/common"
-	log "github.com/chcp/bsn-sdk-go/third_party/github.com/hyperledger/fabric-ca/sdkpatch/logbridge"
-	"github.com/chcp/bsn-sdk-go/third_party/github.com/hyperledger/fabric-ca/util"
 	"github.com/pkg/errors"
+	"github.com/rts-gordon/bsn-sdk-go/third_party/github.com/hyperledger/fabric-ca/api"
+	"github.com/rts-gordon/bsn-sdk-go/third_party/github.com/hyperledger/fabric-ca/lib/client/credential"
+	"github.com/rts-gordon/bsn-sdk-go/third_party/github.com/hyperledger/fabric-ca/lib/client/credential/x509"
+	"github.com/rts-gordon/bsn-sdk-go/third_party/github.com/hyperledger/fabric-ca/lib/common"
+	log "github.com/rts-gordon/bsn-sdk-go/third_party/github.com/hyperledger/fabric-ca/sdkpatch/logbridge"
+	"github.com/rts-gordon/bsn-sdk-go/third_party/github.com/hyperledger/fabric-ca/util"
 )
 
 // Identity is fabric-ca's implementation of an identity

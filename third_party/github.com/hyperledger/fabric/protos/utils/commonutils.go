@@ -16,8 +16,8 @@ import (
 
 	"github.com/golang/protobuf/proto"
 	"github.com/golang/protobuf/ptypes/timestamp"
-	cb "github.com/chcp/bsn-sdk-go/third_party/github.com/hyperledger/fabric/protos/common"
 	"github.com/pkg/errors"
+	cb "github.com/rts-gordon/bsn-sdk-go/third_party/github.com/hyperledger/fabric/protos/common"
 )
 
 // MarshalOrPanic serializes a protobuf message and panics if this

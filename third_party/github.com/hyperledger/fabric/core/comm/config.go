@@ -15,8 +15,8 @@ import (
 	"crypto/x509"
 	"time"
 
-	"github.com/chcp/bsn-sdk-go/third_party/github.com/hyperledger/fabric/common/metrics"
-	flogging "github.com/chcp/bsn-sdk-go/third_party/github.com/hyperledger/fabric/sdkpatch/logbridge"
+	"github.com/rts-gordon/bsn-sdk-go/third_party/github.com/hyperledger/fabric/common/metrics"
+	flogging "github.com/rts-gordon/bsn-sdk-go/third_party/github.com/hyperledger/fabric/sdkpatch/logbridge"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/keepalive"
 )

@@ -1,4 +1,4 @@
-module github.com/chcp/bsn-sdk-go
+module github.com/rts-gordon/bsn-sdk-go
 
 go 1.14
 

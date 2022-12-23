@@ -11,7 +11,7 @@ Please review third_party pinning scripts and patches for more details.
 package lib
 
 import (
-	"github.com/chcp/bsn-sdk-go/third_party/github.com/hyperledger/fabric-ca/api"
+	"github.com/rts-gordon/bsn-sdk-go/third_party/github.com/hyperledger/fabric-ca/api"
 )
 
 type revocationResponseNet struct {

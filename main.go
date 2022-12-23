@@ -11,14 +11,14 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/chcp/bsn-sdk-go/pkg/client/fabric"
-	"github.com/chcp/bsn-sdk-go/pkg/core/config"
-	req "github.com/chcp/bsn-sdk-go/pkg/core/entity/req/fabric/node"
-	"github.com/chcp/bsn-sdk-go/pkg/util/crypto"
+	"github.com/rts-gordon/bsn-sdk-go/pkg/client/fabric"
+	"github.com/rts-gordon/bsn-sdk-go/pkg/core/config"
+	req "github.com/rts-gordon/bsn-sdk-go/pkg/core/entity/req/fabric/node"
+	"github.com/rts-gordon/bsn-sdk-go/pkg/util/crypto"
 )
 
 func main() {
-	fmt.Println("github.com/chcp/bsn-sdk-go")
+	fmt.Println("github.com/rts-gordon/bsn-sdk-go")
 
 	config, err := config.NewMockConfig()
 	if err != nil {

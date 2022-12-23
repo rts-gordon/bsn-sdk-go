@@ -24,7 +24,7 @@ import (
 	"fmt"
 
 	"github.com/golang/protobuf/proto"
-	"github.com/chcp/bsn-sdk-go/third_party/github.com/hyperledger/fabric/common/util"
+	"github.com/rts-gordon/bsn-sdk-go/third_party/github.com/hyperledger/fabric/common/util"
 )
 
 // SignedData is used to represent the general triplet required to verify a signature

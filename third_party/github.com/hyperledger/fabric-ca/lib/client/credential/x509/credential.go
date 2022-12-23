@@ -17,13 +17,13 @@ import (
 
 	"net/http"
 
-	factory "github.com/chcp/bsn-sdk-go/third_party/github.com/hyperledger/fabric-ca/sdkpatch/cryptosuitebridge"
-	log "github.com/chcp/bsn-sdk-go/third_party/github.com/hyperledger/fabric-ca/sdkpatch/logbridge"
+	factory "github.com/rts-gordon/bsn-sdk-go/third_party/github.com/hyperledger/fabric-ca/sdkpatch/cryptosuitebridge"
+	log "github.com/rts-gordon/bsn-sdk-go/third_party/github.com/hyperledger/fabric-ca/sdkpatch/logbridge"
 
-	"github.com/chcp/bsn-sdk-go/third_party/github.com/hyperledger/fabric-ca/api"
-	"github.com/chcp/bsn-sdk-go/third_party/github.com/hyperledger/fabric-ca/lib/client/credential"
 	"github.com/hyperledger/fabric-sdk-go/internal/github.com/hyperledger/fabric-ca/util"
 	"github.com/pkg/errors"
+	"github.com/rts-gordon/bsn-sdk-go/third_party/github.com/hyperledger/fabric-ca/api"
+	"github.com/rts-gordon/bsn-sdk-go/third_party/github.com/hyperledger/fabric-ca/lib/client/credential"
 )
 
 const (

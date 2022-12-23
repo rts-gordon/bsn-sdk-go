@@ -21,11 +21,11 @@ import (
 	"sync"
 	"time"
 
-	"github.com/chcp/bsn-sdk-go/third_party/github.com/hyperledger/fabric/sdkpatch/cachebridge"
 	sdkp11 "github.com/hyperledger/fabric-sdk-go/pkg/core/cryptosuite/common/pkcs11"
+	"github.com/rts-gordon/bsn-sdk-go/third_party/github.com/hyperledger/fabric/sdkpatch/cachebridge"
 
-	logging "github.com/chcp/bsn-sdk-go/third_party/github.com/hyperledger/fabric/sdkpatch/logbridge"
 	"github.com/miekg/pkcs11"
+	logging "github.com/rts-gordon/bsn-sdk-go/third_party/github.com/hyperledger/fabric/sdkpatch/logbridge"
 )
 
 // Look for an EC key by SKI, stored in CKA_ID

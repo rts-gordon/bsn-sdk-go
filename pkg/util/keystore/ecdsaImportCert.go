@@ -1,11 +1,12 @@
 package keystore
 
 import (
-	"github.com/chcp/bsn-sdk-go/pkg/common/errors"
-	"github.com/chcp/bsn-sdk-go/third_party/github.com/hyperledger/fabric/bccsp"
 	"crypto/ecdsa"
 	"crypto/x509"
 	"encoding/pem"
+
+	"github.com/rts-gordon/bsn-sdk-go/pkg/common/errors"
+	"github.com/rts-gordon/bsn-sdk-go/third_party/github.com/hyperledger/fabric/bccsp"
 )
 
 func KeyImport(raw interface{}) (bccsp.Key, error) {

@@ -12,10 +12,10 @@ package utils
 
 import (
 	"github.com/golang/protobuf/proto"
-	"github.com/chcp/bsn-sdk-go/third_party/github.com/hyperledger/fabric/common/util"
-	"github.com/chcp/bsn-sdk-go/third_party/github.com/hyperledger/fabric/protos/common"
-	"github.com/chcp/bsn-sdk-go/third_party/github.com/hyperledger/fabric/protos/peer"
 	"github.com/pkg/errors"
+	"github.com/rts-gordon/bsn-sdk-go/third_party/github.com/hyperledger/fabric/common/util"
+	"github.com/rts-gordon/bsn-sdk-go/third_party/github.com/hyperledger/fabric/protos/common"
+	"github.com/rts-gordon/bsn-sdk-go/third_party/github.com/hyperledger/fabric/protos/peer"
 )
 
 // GetHeader Get Header from bytes

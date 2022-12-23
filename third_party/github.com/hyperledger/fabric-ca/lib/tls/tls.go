@@ -25,11 +25,11 @@ import (
 	"crypto/x509"
 	"time"
 
-	factory "github.com/chcp/bsn-sdk-go/third_party/github.com/hyperledger/fabric-ca/sdkpatch/cryptosuitebridge"
-	log "github.com/chcp/bsn-sdk-go/third_party/github.com/hyperledger/fabric-ca/sdkpatch/logbridge"
-	"github.com/chcp/bsn-sdk-go/third_party/github.com/hyperledger/fabric-ca/util"
 	"github.com/hyperledger/fabric-sdk-go/pkg/common/providers/core"
 	"github.com/pkg/errors"
+	factory "github.com/rts-gordon/bsn-sdk-go/third_party/github.com/hyperledger/fabric-ca/sdkpatch/cryptosuitebridge"
+	log "github.com/rts-gordon/bsn-sdk-go/third_party/github.com/hyperledger/fabric-ca/sdkpatch/logbridge"
+	"github.com/rts-gordon/bsn-sdk-go/third_party/github.com/hyperledger/fabric-ca/util"
 )
 
 // DefaultCipherSuites is a set of strong TLS cipher suites

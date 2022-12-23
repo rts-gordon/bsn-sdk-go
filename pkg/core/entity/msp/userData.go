@@ -1,10 +1,11 @@
 package msp
 
 import (
-	"github.com/chcp/bsn-sdk-go/pkg/common/errors"
-	pb_msp "github.com/chcp/bsn-sdk-go/third_party/github.com/hyperledger/fabric/protos/msp"
 	"crypto/ecdsa"
+
 	"github.com/golang/protobuf/proto"
+	"github.com/rts-gordon/bsn-sdk-go/pkg/common/errors"
+	pb_msp "github.com/rts-gordon/bsn-sdk-go/third_party/github.com/hyperledger/fabric/protos/msp"
 )
 
 type UserData struct {

@@ -13,7 +13,7 @@ package credential
 import (
 	"net/http"
 
-	"github.com/chcp/bsn-sdk-go/third_party/github.com/hyperledger/fabric-ca/api"
+	"github.com/rts-gordon/bsn-sdk-go/third_party/github.com/hyperledger/fabric-ca/api"
 )
 
 // Credential represents an credential of an identity

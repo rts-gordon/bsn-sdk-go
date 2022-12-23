@@ -22,9 +22,9 @@ package msp
 
 import (
 	"github.com/golang/protobuf/proto"
-	flogging "github.com/chcp/bsn-sdk-go/third_party/github.com/hyperledger/fabric/sdkpatch/logbridge"
-	"github.com/chcp/bsn-sdk-go/third_party/github.com/hyperledger/fabric/protos/msp"
 	"github.com/pkg/errors"
+	"github.com/rts-gordon/bsn-sdk-go/third_party/github.com/hyperledger/fabric/protos/msp"
+	flogging "github.com/rts-gordon/bsn-sdk-go/third_party/github.com/hyperledger/fabric/sdkpatch/logbridge"
 )
 
 var mspLogger = flogging.MustGetLogger("msp")

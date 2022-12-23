@@ -20,9 +20,9 @@ Please review third_party pinning scripts and patches for more details.
 package sw
 
 import (
-	"github.com/chcp/bsn-sdk-go/third_party/github.com/hyperledger/fabric/bccsp"
-	"github.com/chcp/bsn-sdk-go/third_party/github.com/hyperledger/fabric/bccsp/sw"
 	"github.com/pkg/errors"
+	"github.com/rts-gordon/bsn-sdk-go/third_party/github.com/hyperledger/fabric/bccsp"
+	"github.com/rts-gordon/bsn-sdk-go/third_party/github.com/hyperledger/fabric/bccsp/sw"
 )
 
 const (
