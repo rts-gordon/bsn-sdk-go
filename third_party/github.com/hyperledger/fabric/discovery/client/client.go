@@ -18,10 +18,10 @@ import (
 	"time"
 
 	"github.com/golang/protobuf/proto"
-	"github.com/chcp/bsn-sdk-go/third_party/github.com/hyperledger/fabric/protos/discovery"
-	"github.com/chcp/bsn-sdk-go/third_party/github.com/hyperledger/fabric/protos/gossip"
-	"github.com/chcp/bsn-sdk-go/third_party/github.com/hyperledger/fabric/protos/msp"
 	"github.com/pkg/errors"
+	"github.com/rts-gordon/bsn-sdk-go/third_party/github.com/hyperledger/fabric/protos/discovery"
+	"github.com/rts-gordon/bsn-sdk-go/third_party/github.com/hyperledger/fabric/protos/gossip"
+	"github.com/rts-gordon/bsn-sdk-go/third_party/github.com/hyperledger/fabric/protos/msp"
 )
 
 var (

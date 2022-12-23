@@ -21,9 +21,9 @@ Please review third_party pinning scripts and patches for more details.
 package lib
 
 import (
-	"github.com/chcp/bsn-sdk-go/third_party/github.com/hyperledger/fabric-ca/api"
-	"github.com/chcp/bsn-sdk-go/third_party/github.com/hyperledger/fabric-ca/lib/tls"
 	"github.com/hyperledger/fabric-sdk-go/pkg/common/providers/core"
+	"github.com/rts-gordon/bsn-sdk-go/third_party/github.com/hyperledger/fabric-ca/api"
+	"github.com/rts-gordon/bsn-sdk-go/third_party/github.com/hyperledger/fabric-ca/lib/tls"
 )
 
 // ClientConfig is the fabric-ca client's config

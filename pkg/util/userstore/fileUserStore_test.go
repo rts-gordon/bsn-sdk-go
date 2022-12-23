@@ -1,10 +1,10 @@
 package userstore
 
 import (
-	"github.com/chcp/bsn-sdk-go/pkg/core/entity/msp"
-	"github.com/chcp/bsn-sdk-go/pkg/util/keystore"
-	"github.com/chcp/bsn-sdk-go/third_party/github.com/hyperledger/fabric/bccsp/utils"
 	"fmt"
+	"github.com/rts-gordon/bsn-sdk-go/pkg/core/entity/msp"
+	"github.com/rts-gordon/bsn-sdk-go/pkg/util/keystore"
+	"github.com/rts-gordon/bsn-sdk-go/third_party/github.com/hyperledger/fabric/bccsp/utils"
 	"testing"
 )
 
@@ -16,7 +16,7 @@ func TestFileUserStore_Load(t *testing.T) {
 	}
 
 	userStore := FileUserStore{
-		FilePath: "F:\\Work\\RedBaaS\\04SourceCode\\Gateway_sdk\\src\\github.com/chcp/bsn-sdk-go\\test\\msp",
+		FilePath: "F:\\Work\\RedBaaS\\04SourceCode\\Gateway_sdk\\src\\github.com/rts-gordon/bsn-sdk-go\\test\\msp",
 	}
 
 	userStore.Load(userData)
@@ -26,7 +26,7 @@ func TestFileUserStore_Load(t *testing.T) {
 		t.Error(err)
 	}
 
-	fks, err := keystore.NewFileBasedKeyStore(nil, "F:\\Work\\RedBaaS\\04SourceCode\\Gateway_sdk\\src\\github.com/chcp/bsn-sdk-go\\test\\msp\\keystore", false)
+	fks, err := keystore.NewFileBasedKeyStore(nil, "F:\\Work\\RedBaaS\\04SourceCode\\Gateway_sdk\\src\\github.com/rts-gordon/bsn-sdk-go\\test\\msp\\keystore", false)
 	if err != nil {
 		t.Error(err)
 	}

@@ -1,17 +1,16 @@
 package client
 
 import (
-	"github.com/chcp/bsn-sdk-go/pkg/common/errors"
-	"github.com/chcp/bsn-sdk-go/pkg/core/config"
-	"github.com/chcp/bsn-sdk-go/pkg/core/entity/base"
-	"github.com/chcp/bsn-sdk-go/pkg/core/entity/enum"
-	"github.com/chcp/bsn-sdk-go/pkg/core/entity/msp"
-	"github.com/chcp/bsn-sdk-go/pkg/core/sign"
-	"github.com/chcp/bsn-sdk-go/pkg/util/esdsa"
-	"github.com/chcp/bsn-sdk-go/pkg/util/keystore"
-	"github.com/chcp/bsn-sdk-go/pkg/util/sm2"
-	"github.com/chcp/bsn-sdk-go/pkg/util/userstore"
-	"github.com/chcp/bsn-sdk-go/third_party/github.com/hyperledger/fabric/bccsp"
+	"github.com/rts-gordon/bsn-sdk-go/pkg/common/errors"
+	"github.com/rts-gordon/bsn-sdk-go/pkg/core/config"
+	"github.com/rts-gordon/bsn-sdk-go/pkg/core/entity/base"
+	"github.com/rts-gordon/bsn-sdk-go/pkg/core/entity/enum"
+	"github.com/rts-gordon/bsn-sdk-go/pkg/core/entity/msp"
+	"github.com/rts-gordon/bsn-sdk-go/pkg/core/sign"
+	"github.com/rts-gordon/bsn-sdk-go/pkg/util/keystore"
+	"github.com/rts-gordon/bsn-sdk-go/pkg/util/sm2"
+	"github.com/rts-gordon/bsn-sdk-go/pkg/util/userstore"
+	"github.com/rts-gordon/bsn-sdk-go/third_party/github.com/hyperledger/fabric/bccsp"
 
 	"github.com/wonderivan/logger"
 )
@@ -93,25 +92,25 @@ func (c *Client) GetUser(name string) (*msp.UserData, error) {
 
 }
 
-func (c *Client)LoadLocalUser(name string) (*msp.UserData, error)  {
+func (c *Client) LoadLocalUser(name string) (*msp.UserData, error) {
 
-	user :=&msp.UserData{
-		UserName:name,
-		AppCode:c.Config.GetAppInfo().AppCode,
+	user := &msp.UserData{
+		UserName: name,
+		AppCode:  c.Config.GetAppInfo().AppCode,
 	}
 
-	err :=c.Us.Load(user)
-	if err !=nil{
-		return nil,err
+	err := c.Us.Load(user)
+	if err != nil {
+		return nil, err
 	}
 	err = keystore.LoadKey(user, c.Ks)
 
 	if err != nil {
-		return nil,err
+		return nil, err
 
-	}else {
+	} else {
 		c.Users[user.UserName] = user
-		return user,nil
+		return user, nil
 
 	}
 

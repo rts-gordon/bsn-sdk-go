@@ -1,9 +1,9 @@
 package app
 
 import (
-	"github.com/chcp/bsn-sdk-go/pkg/core/entity/base"
-	"github.com/chcp/bsn-sdk-go/pkg/core/entity/req"
 	"fmt"
+	"github.com/rts-gordon/bsn-sdk-go/pkg/core/entity/base"
+	"github.com/rts-gordon/bsn-sdk-go/pkg/core/entity/req"
 	"testing"
 )
 
@@ -20,7 +20,7 @@ func TestGetAppInfo(t *testing.T) {
 
 	reqData.Header = header
 
-	res,_ := GetAppInfo(&reqData, api, "")
+	res, _ := GetAppInfo(&reqData, api, "")
 
 	if res.Header.Code != 0 {
 		fmt.Println(res.Header.Msg)

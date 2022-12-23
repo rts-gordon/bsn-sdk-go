@@ -3,9 +3,10 @@ package keystore
 import (
 	"crypto"
 	"crypto/elliptic"
+
 	"github.com/pkg/errors"
 
-	"github.com/chcp/bsn-sdk-go/third_party/github.com/hyperledger/fabric/bccsp"
+	"github.com/rts-gordon/bsn-sdk-go/third_party/github.com/hyperledger/fabric/bccsp"
 )
 
 func BCCSPKeyRequestGenerate(ks bccsp.KeyStore) (bccsp.Key, crypto.Signer, error) {

@@ -1,12 +1,13 @@
 package userstore
 
 import (
-	"github.com/chcp/bsn-sdk-go/pkg/common/errors"
-	"github.com/chcp/bsn-sdk-go/pkg/core/entity/msp"
 	"io/ioutil"
 	"os"
 	path2 "path"
 	"strings"
+
+	"github.com/rts-gordon/bsn-sdk-go/pkg/common/errors"
+	"github.com/rts-gordon/bsn-sdk-go/pkg/core/entity/msp"
 )
 
 func NewUserStore(path string) UserStore {

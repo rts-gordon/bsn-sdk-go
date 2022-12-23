@@ -15,7 +15,7 @@ English | [简体中文](./README.md)
 ```
     cd yourproject
     go mod init 
-    go get github.com/chcp/bsn-sdk-go
+    go get github.com/rts-gordon/bsn-sdk-go
 ```
 * generate file go.mod:
 ```
@@ -23,5 +23,5 @@ English | [简体中文](./README.md)
     
     go 1.14
     
-    require github.com/chcp/bsn-sdk-go v1.1.1
+    require github.com/rts-gordon/bsn-sdk-go v1.1.1
 ```

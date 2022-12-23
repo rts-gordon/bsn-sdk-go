@@ -11,7 +11,7 @@ Please review third_party pinning scripts and patches for more details.
 package util
 
 import (
-	"github.com/chcp/bsn-sdk-go/third_party/github.com/hyperledger/fabric/protos/peer"
+	"github.com/rts-gordon/bsn-sdk-go/third_party/github.com/hyperledger/fabric/protos/peer"
 )
 
 // TxValidationFlags is array of transaction validation codes. It is used when committer validates block.

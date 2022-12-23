@@ -1,11 +1,12 @@
 package ecdsa
 
 import (
-	"github.com/chcp/bsn-sdk-go/pkg/common/errors"
 	"crypto/ecdsa"
 	"crypto/sha256"
 	"encoding/pem"
 	"fmt"
+
+	"github.com/rts-gordon/bsn-sdk-go/pkg/common/errors"
 )
 
 func getPuk(pub string) (*ecdsa.PublicKey, error) {
@@ -72,4 +73,3 @@ func (e *ecdsaHandle) Verify(sign, digest []byte) (bool, error) {
 	return VerifyECDSA(e.pubKey, sign, digest)
 
 }
-

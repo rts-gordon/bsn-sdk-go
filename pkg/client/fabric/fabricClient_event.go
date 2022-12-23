@@ -1,12 +1,13 @@
 package fabric
 
 import (
-	resBase "github.com/chcp/bsn-sdk-go/pkg/core/entity/base"
-	eventreq "github.com/chcp/bsn-sdk-go/pkg/core/entity/req/fabric/event"
-	eventres "github.com/chcp/bsn-sdk-go/pkg/core/entity/res/fabric/event"
+	resBase "github.com/rts-gordon/bsn-sdk-go/pkg/core/entity/base"
+	eventreq "github.com/rts-gordon/bsn-sdk-go/pkg/core/entity/req/fabric/event"
+	eventres "github.com/rts-gordon/bsn-sdk-go/pkg/core/entity/res/fabric/event"
 
-	"github.com/chcp/bsn-sdk-go/pkg/util/http"
 	"encoding/json"
+
+	"github.com/rts-gordon/bsn-sdk-go/pkg/util/http"
 	"github.com/wonderivan/logger"
 )
 

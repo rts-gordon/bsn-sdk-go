@@ -13,7 +13,7 @@
 ```
     cd yourproject
     go mod init 
-    go get github.com/chcp/bsn-sdk-go
+    go get github.com/rts-gordon/bsn-sdk-go
 ```
 * 生成的go.mod内容如下：
 ```
@@ -21,6 +21,6 @@
     
     go 1.14
     
-    require github.com/chcp/bsn-sdk-go v1.1.1
+    require github.com/rts-gordon/bsn-sdk-go v1.1.1
 
 ```

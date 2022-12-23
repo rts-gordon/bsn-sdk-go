@@ -17,8 +17,8 @@ import (
 	"encoding/pem"
 	"net/http"
 
-	"github.com/chcp/bsn-sdk-go/third_party/github.com/hyperledger/fabric-ca/util"
 	"github.com/pkg/errors"
+	"github.com/rts-gordon/bsn-sdk-go/third_party/github.com/hyperledger/fabric-ca/util"
 )
 
 var clientAuthTypes = map[string]tls.ClientAuthType{

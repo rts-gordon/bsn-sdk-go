@@ -1,11 +1,11 @@
 package fabric
 
 import (
-	config2 "github.com/chcp/bsn-sdk-go/pkg/core/config"
-	req "github.com/chcp/bsn-sdk-go/pkg/core/entity/req/fabric/node"
-	"github.com/chcp/bsn-sdk-go/pkg/util/crypto"
 	"encoding/base64"
 	"fmt"
+	config2 "github.com/rts-gordon/bsn-sdk-go/pkg/core/config"
+	req "github.com/rts-gordon/bsn-sdk-go/pkg/core/entity/req/fabric/node"
+	"github.com/rts-gordon/bsn-sdk-go/pkg/util/crypto"
 	"testing"
 	"time"
 )
@@ -38,7 +38,7 @@ func TestFabricClient_SdkTran(t *testing.T) {
 	}
 
 	res, err := fabricClient.SdkTran(body)
-	if err !=nil{
+	if err != nil {
 		t.Fatal(err)
 	}
 	fmt.Println(res)
@@ -53,7 +53,7 @@ func TestFabricClient_ReqChainCode(t *testing.T) {
 		t.Fatal(err.Error())
 	}
 
-	fmt.Println("cert",config.GetCert())
+	fmt.Println("cert", config.GetCert())
 
 	fabricClient, err := InitFabricClient(config)
 
@@ -126,7 +126,7 @@ func TestFabricClient_GetBlockInfo(t *testing.T) {
 	}
 
 	tx := req.BlockReqDataBody{
-		BlockHash:"d04fdb12073abfee4f3ee45472468a1cf0434e74d6342671a8c43b713f6a5e92",
+		BlockHash: "d04fdb12073abfee4f3ee45472468a1cf0434e74d6342671a8c43b713f6a5e92",
 	}
 
 	res, _ := fabricClient.GetBlockInfo(tx)
@@ -137,7 +137,6 @@ func TestFabricClient_GetBlockInfo(t *testing.T) {
 	fmt.Println(res)
 
 }
-
 
 func TestFabricClient_GetLedgerInfo(t *testing.T) {
 

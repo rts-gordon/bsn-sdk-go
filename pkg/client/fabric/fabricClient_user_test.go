@@ -1,9 +1,9 @@
 package fabric
 
 import (
-	config2 "github.com/chcp/bsn-sdk-go/pkg/core/config"
-	req "github.com/chcp/bsn-sdk-go/pkg/core/entity/req/fabric/user"
 	"fmt"
+	config2 "github.com/rts-gordon/bsn-sdk-go/pkg/core/config"
+	req "github.com/rts-gordon/bsn-sdk-go/pkg/core/entity/req/fabric/user"
 	"testing"
 )
 
@@ -27,7 +27,7 @@ func TestFabricClient_RegisterUser(t *testing.T) {
 	}
 
 	res, err := fabricClient.RegisterUser(body)
-	if err !=nil {
+	if err != nil {
 		t.Fatal(err)
 	}
 

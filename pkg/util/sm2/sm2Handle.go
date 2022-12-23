@@ -1,9 +1,10 @@
 package sm2
 
 import (
-	"github.com/chcp/bsn-sdk-go/pkg/common/errors"
 	"encoding/pem"
 	"fmt"
+
+	"github.com/rts-gordon/bsn-sdk-go/pkg/common/errors"
 	"github.com/tjfoc/gmsm/sm2"
 	"github.com/tjfoc/gmsm/sm3"
 )
@@ -98,14 +99,14 @@ func (e *sm2Handle) Verify(sign, digest []byte) (bool, error) {
 	return v, nil
 }
 
-func (e *sm2Handle)Encrypt(data []byte) ([]byte,error) {
+func (e *sm2Handle) Encrypt(data []byte) ([]byte, error) {
 
-	return sm2.Encrypt(e.pubKey,data)
-	
+	return sm2.Encrypt(e.pubKey, data)
+
 }
 
-func (e *sm2Handle)Decrypt(data []byte) ([]byte,error) {
+func (e *sm2Handle) Decrypt(data []byte) ([]byte, error) {
 
-	return sm2.Decrypt(e.priKey,data)
+	return sm2.Decrypt(e.priKey, data)
 
 }

@@ -24,21 +24,21 @@ import (
 	"strconv"
 	"strings"
 
+	"RedNodeGateway/pkg/nodelog"
+
 	cfsslapi "github.com/cloudflare/cfssl/api"
 	"github.com/cloudflare/cfssl/csr"
-	"github.com/chcp/bsn-sdk-go/third_party/github.com/hyperledger/fabric-ca/api"
-	"github.com/chcp/bsn-sdk-go/third_party/github.com/hyperledger/fabric-ca/lib/client/credential"
-	x509cred "github.com/chcp/bsn-sdk-go/third_party/github.com/hyperledger/fabric-ca/lib/client/credential/x509"
-	"github.com/chcp/bsn-sdk-go/third_party/github.com/hyperledger/fabric-ca/lib/common"
-	"github.com/chcp/bsn-sdk-go/third_party/github.com/hyperledger/fabric-ca/lib/streamer"
-	"github.com/chcp/bsn-sdk-go/third_party/github.com/hyperledger/fabric-ca/lib/tls"
-	log "github.com/chcp/bsn-sdk-go/third_party/github.com/hyperledger/fabric-ca/sdkpatch/logbridge"
-	"github.com/chcp/bsn-sdk-go/third_party/github.com/hyperledger/fabric-ca/util"
 	"github.com/hyperledger/fabric-sdk-go/pkg/common/providers/core"
 	"github.com/mitchellh/mapstructure"
 	"github.com/pkg/errors"
-	"RedNodeGateway/pkg/nodelog"
-
+	"github.com/rts-gordon/bsn-sdk-go/third_party/github.com/hyperledger/fabric-ca/api"
+	"github.com/rts-gordon/bsn-sdk-go/third_party/github.com/hyperledger/fabric-ca/lib/client/credential"
+	x509cred "github.com/rts-gordon/bsn-sdk-go/third_party/github.com/hyperledger/fabric-ca/lib/client/credential/x509"
+	"github.com/rts-gordon/bsn-sdk-go/third_party/github.com/hyperledger/fabric-ca/lib/common"
+	"github.com/rts-gordon/bsn-sdk-go/third_party/github.com/hyperledger/fabric-ca/lib/streamer"
+	"github.com/rts-gordon/bsn-sdk-go/third_party/github.com/hyperledger/fabric-ca/lib/tls"
+	log "github.com/rts-gordon/bsn-sdk-go/third_party/github.com/hyperledger/fabric-ca/sdkpatch/logbridge"
+	"github.com/rts-gordon/bsn-sdk-go/third_party/github.com/hyperledger/fabric-ca/util"
 )
 
 // Client is the fabric-ca client object

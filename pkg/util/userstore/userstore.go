@@ -1,7 +1,7 @@
 package userstore
 
 import (
-	"github.com/chcp/bsn-sdk-go/pkg/core/entity/msp"
+	"github.com/rts-gordon/bsn-sdk-go/pkg/core/entity/msp"
 )
 
 type UserStore interface {
