@@ -22,11 +22,11 @@ import (
 	"time"
 
 	"github.com/golang/protobuf/proto"
-	bccsp "github.com/chcp/bsn-sdk-go/third_party/github.com/hyperledger/fabric/sdkpatch/cryptosuitebridge"
-	flogging "github.com/chcp/bsn-sdk-go/third_party/github.com/hyperledger/fabric/sdkpatch/logbridge"
-	logging "github.com/chcp/bsn-sdk-go/third_party/github.com/hyperledger/fabric/sdkpatch/logbridge"
-	"github.com/chcp/bsn-sdk-go/third_party/github.com/hyperledger/fabric/protos/msp"
 	"github.com/pkg/errors"
+	"github.com/rts-gordon/bsn-sdk-go/third_party/github.com/hyperledger/fabric/protos/msp"
+	bccsp "github.com/rts-gordon/bsn-sdk-go/third_party/github.com/hyperledger/fabric/sdkpatch/cryptosuitebridge"
+	flogging "github.com/rts-gordon/bsn-sdk-go/third_party/github.com/hyperledger/fabric/sdkpatch/logbridge"
+	logging "github.com/rts-gordon/bsn-sdk-go/third_party/github.com/hyperledger/fabric/sdkpatch/logbridge"
 )
 
 var mspIdentityLogger = flogging.MustGetLogger("msp.identity")

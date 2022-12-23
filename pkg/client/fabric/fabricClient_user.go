@@ -1,15 +1,15 @@
 package fabric
 
 import (
-	userreq "github.com/chcp/bsn-sdk-go/pkg/core/entity/req/fabric/user"
-	userres "github.com/chcp/bsn-sdk-go/pkg/core/entity/res/fabric/user"
+	userreq "github.com/rts-gordon/bsn-sdk-go/pkg/core/entity/req/fabric/user"
+	userres "github.com/rts-gordon/bsn-sdk-go/pkg/core/entity/res/fabric/user"
 
-	"github.com/chcp/bsn-sdk-go/pkg/common/errors"
-	"github.com/chcp/bsn-sdk-go/pkg/core/cert"
-	"github.com/chcp/bsn-sdk-go/pkg/core/entity/base"
-	"github.com/chcp/bsn-sdk-go/pkg/core/entity/msp"
-	"github.com/chcp/bsn-sdk-go/pkg/util/http"
-	"github.com/chcp/bsn-sdk-go/pkg/util/keystore"
+	"github.com/rts-gordon/bsn-sdk-go/pkg/common/errors"
+	"github.com/rts-gordon/bsn-sdk-go/pkg/core/cert"
+	"github.com/rts-gordon/bsn-sdk-go/pkg/core/entity/base"
+	"github.com/rts-gordon/bsn-sdk-go/pkg/core/entity/msp"
+	"github.com/rts-gordon/bsn-sdk-go/pkg/util/http"
+	"github.com/rts-gordon/bsn-sdk-go/pkg/util/keystore"
 
 	"encoding/json"
 	"fmt"
@@ -43,8 +43,8 @@ func (c *FabricClient) RegisterUser(body userreq.RegisterReqDataBody) (*userres.
 		logger.Error("return parameter serialization failed：", err)
 		return nil, err
 	}
-	if !c.Verify(res.Mac,res.GetEncryptionValue()){
-		return nil,errors.New("sign has error")
+	if !c.Verify(res.Mac, res.GetEncryptionValue()) {
+		return nil, errors.New("sign has error")
 	}
 
 	return res, nil
@@ -84,9 +84,9 @@ func (c *FabricClient) EnrollUser(body userreq.RegisterReqDataBody) error {
 
 		pk := keystore.GetECDSAPrivateKey(key)
 		user := &msp.UserData{
-			UserName: enrollBody.Name,
-			AppCode:  c.Config.GetAppInfo().AppCode,
-			MspId:    c.Config.GetAppInfo().MspId,
+			UserName:              enrollBody.Name,
+			AppCode:               c.Config.GetAppInfo().AppCode,
+			MspId:                 c.Config.GetAppInfo().MspId,
 			EnrollmentCertificate: []byte(res.Body.Cert),
 			PrivateKey:            pk,
 		}

@@ -28,9 +28,9 @@ import (
 	"strings"
 
 	"github.com/Knetic/govaluate"
-	"github.com/chcp/bsn-sdk-go/third_party/github.com/hyperledger/fabric/protos/common"
-	"github.com/chcp/bsn-sdk-go/third_party/github.com/hyperledger/fabric/protos/msp"
-	"github.com/chcp/bsn-sdk-go/third_party/github.com/hyperledger/fabric/protos/utils"
+	"github.com/rts-gordon/bsn-sdk-go/third_party/github.com/hyperledger/fabric/protos/common"
+	"github.com/rts-gordon/bsn-sdk-go/third_party/github.com/hyperledger/fabric/protos/msp"
+	"github.com/rts-gordon/bsn-sdk-go/third_party/github.com/hyperledger/fabric/protos/utils"
 )
 
 // Gate values

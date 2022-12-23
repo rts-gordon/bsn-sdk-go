@@ -1,8 +1,9 @@
 package cache
 
 import (
-	"github.com/chcp/bsn-sdk-go/pkg/util/cache/proc"
 	"time"
+
+	"github.com/rts-gordon/bsn-sdk-go/pkg/util/cache/proc"
 )
 
 const (
@@ -15,7 +16,7 @@ var ca *proc.Cache
 func InitCache() {
 	// Default expiration time
 	defaultExpiration, _ := time.ParseDuration(Expiration)
-	//Recovery time, recovery expired 
+	//Recovery time, recovery expired
 	gcInterval, _ := time.ParseDuration(Interval)
 	ca = proc.NewCache(defaultExpiration, gcInterval)
 

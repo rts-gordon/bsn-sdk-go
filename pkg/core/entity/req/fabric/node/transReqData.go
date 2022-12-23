@@ -1,14 +1,13 @@
 package node
 
 import (
-	"github.com/chcp/bsn-sdk-go/pkg/core/entity/base"
-	"github.com/chcp/bsn-sdk-go/pkg/core/trans"
+	"github.com/rts-gordon/bsn-sdk-go/pkg/core/entity/base"
+	"github.com/rts-gordon/bsn-sdk-go/pkg/core/trans"
 )
 
 type TransReqData struct {
 	base.BaseReqModel
 	Body TransReqDataBody `json:"body"`
-
 }
 
 type TransReqDataBody struct {

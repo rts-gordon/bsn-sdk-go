@@ -1,12 +1,10 @@
-
 package event
 
-import "github.com/chcp/bsn-sdk-go/pkg/core/entity/base"
+import "github.com/rts-gordon/bsn-sdk-go/pkg/core/entity/base"
 
 type RegisterReqData struct {
 	base.BaseReqModel
 	Body RegisterReqDataBody `json:"body"`
-
 }
 
 type RegisterReqDataBody struct {

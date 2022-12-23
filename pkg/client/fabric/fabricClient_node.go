@@ -1,13 +1,14 @@
 package fabric
 
 import (
-	nodereq "github.com/chcp/bsn-sdk-go/pkg/core/entity/req/fabric/node"
-	noderes "github.com/chcp/bsn-sdk-go/pkg/core/entity/res/fabric/node"
+	nodereq "github.com/rts-gordon/bsn-sdk-go/pkg/core/entity/req/fabric/node"
+	noderes "github.com/rts-gordon/bsn-sdk-go/pkg/core/entity/res/fabric/node"
 	"github.com/wonderivan/logger"
 
-	"github.com/chcp/bsn-sdk-go/pkg/core/trans"
-	"github.com/chcp/bsn-sdk-go/pkg/util/http"
 	"encoding/json"
+
+	"github.com/rts-gordon/bsn-sdk-go/pkg/core/trans"
+	"github.com/rts-gordon/bsn-sdk-go/pkg/util/http"
 )
 
 func (c *FabricClient) SdkTran(body nodereq.TransReqDataBody) (*noderes.TranResData, error) {
@@ -15,16 +16,16 @@ func (c *FabricClient) SdkTran(body nodereq.TransReqDataBody) (*noderes.TranResD
 	url := c.GetURL("/api/fabric/v1/node/trans")
 
 	user, err := c.GetUser(body.UserName)
-	if err !=nil{
-		return nil,err
+	if err != nil {
+		return nil, err
 	}
 
 	request := body.GetTransRequest(c.Config.GetAppInfo().ChannelId)
 
 	transData, _, err := trans.CreateRequest(user, request)
 
-	if err !=nil{
-		return nil,err
+	if err != nil {
+		return nil, err
 	}
 
 	data := &nodereq.SdkTransReqData{}
@@ -36,8 +37,8 @@ func (c *FabricClient) SdkTran(body nodereq.TransReqDataBody) (*noderes.TranResD
 
 	reqBytes, err := json.Marshal(data)
 
-	if err !=nil{
-		return nil,err
+	if err != nil {
+		return nil, err
 	}
 
 	resBytes, err := http.SendPost(reqBytes, url, c.Config.GetCert())

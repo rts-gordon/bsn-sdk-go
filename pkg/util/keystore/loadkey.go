@@ -1,8 +1,8 @@
 package keystore
 
 import (
-	"github.com/chcp/bsn-sdk-go/pkg/core/entity/msp"
-	"github.com/chcp/bsn-sdk-go/third_party/github.com/hyperledger/fabric/bccsp"
+	"github.com/rts-gordon/bsn-sdk-go/pkg/core/entity/msp"
+	"github.com/rts-gordon/bsn-sdk-go/third_party/github.com/hyperledger/fabric/bccsp"
 	"github.com/wonderivan/logger"
 )
 

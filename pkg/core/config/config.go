@@ -3,11 +3,11 @@ package config
 import (
 	"path"
 
-	"github.com/chcp/bsn-sdk-go/pkg/client/app"
-	"github.com/chcp/bsn-sdk-go/pkg/common/errors"
-	"github.com/chcp/bsn-sdk-go/pkg/core/entity/base"
-	"github.com/chcp/bsn-sdk-go/pkg/core/entity/enum"
-	"github.com/chcp/bsn-sdk-go/pkg/core/entity/req"
+	"github.com/rts-gordon/bsn-sdk-go/pkg/client/app"
+	"github.com/rts-gordon/bsn-sdk-go/pkg/common/errors"
+	"github.com/rts-gordon/bsn-sdk-go/pkg/core/entity/base"
+	"github.com/rts-gordon/bsn-sdk-go/pkg/core/entity/enum"
+	"github.com/rts-gordon/bsn-sdk-go/pkg/core/entity/req"
 )
 
 const (

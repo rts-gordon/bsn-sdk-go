@@ -15,7 +15,7 @@ import (
 	"fmt"
 	"sync"
 
-	factory "github.com/chcp/bsn-sdk-go/third_party/github.com/hyperledger/fabric/sdkpatch/cryptosuitebridge"
+	factory "github.com/rts-gordon/bsn-sdk-go/third_party/github.com/hyperledger/fabric/sdkpatch/cryptosuitebridge"
 )
 
 // MemoizeSigner signs messages with the same signature

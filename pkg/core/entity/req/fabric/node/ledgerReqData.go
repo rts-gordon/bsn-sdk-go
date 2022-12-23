@@ -1,6 +1,6 @@
 package node
 
-import "github.com/chcp/bsn-sdk-go/pkg/core/entity/base"
+import "github.com/rts-gordon/bsn-sdk-go/pkg/core/entity/base"
 
 type LedgerReqData struct {
 	base.BaseReqModel

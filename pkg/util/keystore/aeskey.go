@@ -23,7 +23,7 @@ import (
 	"crypto/sha256"
 	"errors"
 
-	"github.com/chcp/bsn-sdk-go/third_party/github.com/hyperledger/fabric/bccsp"
+	"github.com/rts-gordon/bsn-sdk-go/third_party/github.com/hyperledger/fabric/bccsp"
 )
 
 type aesPrivateKey struct {

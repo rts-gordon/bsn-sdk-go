@@ -1,6 +1,6 @@
 package user
 
-import "github.com/chcp/bsn-sdk-go/pkg/core/entity/base"
+import "github.com/rts-gordon/bsn-sdk-go/pkg/core/entity/base"
 
 type RegisterResData struct {
 	base.BaseResModel
@@ -8,7 +8,7 @@ type RegisterResData struct {
 }
 
 type RegisterResDataBody struct {
-	Name   string `json:"name"`   //Less than 20 bits
+	Name   string `json:"name"` //Less than 20 bits
 	Secret string `json:"secret"`
 }
 

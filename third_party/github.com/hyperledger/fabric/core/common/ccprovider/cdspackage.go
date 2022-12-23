@@ -22,7 +22,7 @@ package ccprovider
 
 import (
 	"github.com/golang/protobuf/proto"
-	pb "github.com/chcp/bsn-sdk-go/third_party/github.com/hyperledger/fabric/protos/peer"
+	pb "github.com/rts-gordon/bsn-sdk-go/third_party/github.com/hyperledger/fabric/protos/peer"
 )
 
 //----- CDSData ------

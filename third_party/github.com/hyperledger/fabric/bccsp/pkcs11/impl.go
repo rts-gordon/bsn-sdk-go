@@ -16,11 +16,11 @@ import (
 	"crypto/x509"
 	"os"
 
-	"github.com/chcp/bsn-sdk-go/third_party/github.com/hyperledger/fabric/bccsp"
-	"github.com/chcp/bsn-sdk-go/third_party/github.com/hyperledger/fabric/bccsp/sw"
-	flogging "github.com/chcp/bsn-sdk-go/third_party/github.com/hyperledger/fabric/sdkpatch/logbridge"
 	sdkp11 "github.com/hyperledger/fabric-sdk-go/pkg/core/cryptosuite/common/pkcs11"
 	"github.com/pkg/errors"
+	"github.com/rts-gordon/bsn-sdk-go/third_party/github.com/hyperledger/fabric/bccsp"
+	"github.com/rts-gordon/bsn-sdk-go/third_party/github.com/hyperledger/fabric/bccsp/sw"
+	flogging "github.com/rts-gordon/bsn-sdk-go/third_party/github.com/hyperledger/fabric/sdkpatch/logbridge"
 )
 
 var (
